@@ -50,8 +50,6 @@ const Login = () => {
     await dispatch(loginRequestAction(values));
 
     resetForm();
-
-    // console.log(formData);
   };
 
   return (
@@ -65,6 +63,7 @@ const Login = () => {
           <div className="mb-3">
             <Field
               as={TextField}
+              id="login-email"
               name="email"
               type="email"
               placeholder="Email"
@@ -78,6 +77,7 @@ const Login = () => {
           <div className="mb-3">
             <Field
               as={TextField}
+              id="login-password"
               name="password"
               type="password"
               placeholder="Password"
@@ -110,7 +110,7 @@ const Login = () => {
       </div>
 
       <p className="mt-4 text-blue-400 ">
-        Are you already registerd ?{" "}
+        Already registerd ?{" "}
         <span
           className="hover:text-red-500 text-md"
           onClick={() => navigate("/signup")}

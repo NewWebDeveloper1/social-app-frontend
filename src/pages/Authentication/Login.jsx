@@ -34,7 +34,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // console.log(token);
     if (token) {
       dispatch(getUserProfile(token));
       navigate("/");
@@ -113,7 +112,7 @@ const Login = () => {
       <p className="mt-4 text-blue-400 ">
         Are you already registerd ?{" "}
         <span
-          className="text-blue-700 hover:text-red-500 text-md"
+          className="hover:text-red-500 text-md"
           onClick={() => navigate("/signup")}
           style={{ cursor: "pointer" }}
         >

@@ -42,12 +42,6 @@ const gender = [
   },
 ];
 
-// const ErrorMsg = () => {
-//   return (
-//     <div className=" text-red-400"></div>
-//   )
-// };
-
 const Register = () => {
   const [formData, setFormData] = useState(null);
 
@@ -59,8 +53,6 @@ const Register = () => {
     setFormData(values);
 
     dispatch(registerRequestAction(values));
-
-    console.log(values);
 
     resetForm();
   };
@@ -165,7 +157,7 @@ const Register = () => {
       <p className="my-3 text-blue-400 text-center">
         Already registered ?{" "}
         <span
-          className="text-blue-800 hover:text-red-400 text-sm tracking-wider"
+          className="hover:text-red-400 text-sm tracking-wider"
           onClick={() => navigate("/signin")}
           style={{ cursor: "pointer" }}
         >

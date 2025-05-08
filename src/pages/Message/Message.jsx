@@ -68,7 +68,7 @@ const Message = () => {
 
   useEffect(() => {
     const client = new Client({
-      webSocketFactory: () => new SockJS(`${API_BASE_URI}/ws`),
+      webSocketFactory: () => new SockJS(`${API_BASE_URI}/wss`),
       reconnectDelay: 5000,
       onConnect: () => {
         console.log("Connected to WebSocket");

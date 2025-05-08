@@ -5,7 +5,7 @@ import AddCallIcon from "@mui/icons-material/AddCall";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import cloudUpload from "../../utils/uploadToCloud";
-import SearchUser from "./searchUser";
+import SearchUser from "./SearchUser";
 import styles from "./message.module.css";
 import { useNavigate } from "react-router-dom";
 import UserChatCard from "./UserChatCard";

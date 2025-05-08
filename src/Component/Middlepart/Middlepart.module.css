@@ -1,0 +1,8 @@
+.customScrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.customScrollbar {
+  overflow: auto !important;
+}

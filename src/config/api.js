@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_BASE_URI = "http://localhost:8000";
+export const API_BASE_URI = "social-app-server-production-fb14.up.railway.app";
 
 export const jwtToken = localStorage.getItem("jwt");
 
